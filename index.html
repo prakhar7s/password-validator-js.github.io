@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css"
+      integrity="sha256-2XFplPlrFClt0bIdPgpz8H7ojnk10H69xRqd9+uTShA="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <input
+        type="password"
+        class="password"
+        placeholder="Enter your password"
+        oninput="textChange()"
+        required
+      />
+      <i class="fas fa-eye" id="show_hide" onclick="showHide()"></i>
+      <p id="capital">
+        <i class="fas fa-times"></i>
+        <i class="fas fa-check"></i>
+        <span>Capital Letters</span>
+      </p>
+      <p id="char">
+        <i class="fas fa-times"></i>
+        <i class="fas fa-check"></i>
+        <span>Special Characters</span>
+      </p>
+      <p id="num">
+        <i class="fas fa-times"></i>
+        <i class="fas fa-check"></i>
+        <span>Using Numbers</span>
+      </p>
+      <p id="more8">
+        <i class="fas fa-times"></i>
+        <i class="fas fa-check"></i>
+        <span>8+ Characater</span>
+      </p>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
